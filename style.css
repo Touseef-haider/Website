@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Navbar{
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+.Navbar a{
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.Navbar a:hover{
+    color: red;
+}
+#close{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: width 0.5s;
+}
+#open{
+    border: none;
+    font-size: x-large;
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Main{
+    width: 100%;
+    display: grid;  
+    grid-template-columns: 1fr;
+}
+.Container{
+    position:fixed;
+    top:0px;
+    z-index: 1;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Brand #open{
+    margin-left: 5px;
+}
+.Brand span{
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    font-size: xx-large;
+}
+.Menu{
+    margin:20px;
+}
+.Menu a{
+    text-decoration: none;
+    padding-right: 40px;
+    color: white;
+    font-size: large;
+}
+.BackgroundText{
+    width: 100%;
+    background-color:darkslategrey;
+    height: 400px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    color:white;
+}
+.BackgroundText h1{
+    animation: ComeDown 5s 1;
+    margin-top: 160px;
+}
+.Owner{
+    display: flex;
+    text-align: center;
+    margin-top: 5px;
+    justify-content: space-around;
+}
+.Ceo img{
+    height: 500px;
+}
+.Own img{
+    height: 500px;
+}
+.Ceo p{
+    padding-bottom: 20px;
+}
+.Own p{
+    padding-bottom: 20px;
+}
+#btn{
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    border: none;
+    border-radius: 25px;
+    font-size: x-large;
+    transition: font-size 0.5s;
+}
+#btn:hover{
+    font-size: xx-large;
+    transition: font-size 0.5s;
+}
+.Learn-More{
+    width: 100%;
+    height: 400px;
+    background-color:snow;
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.Footer{
+    width: 100%;
+    height: 200px;
+    background-color: bisque;
+}
+i{
+    display: inline;
+    margin-right: 10px;
+}
+@media(max-width:500px){
+    .Owner{
+        flex-direction: column;
+    }
+    .Container{
+        position: fixed;
+    }
+    .Menu a{
+        padding:2px;
+    }
+}
+@keyframes ComeDown{
+    from{
+        margin-top: 0px;                
+    }
+    to{
+        margin-top: 160px;                
+    }
+}
