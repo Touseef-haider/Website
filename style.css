@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
 }
 html{
@@ -16,6 +17,7 @@ html{
     background-color: #111;
     overflow-x: hidden;
     transition: width 0.5s;
+    border: 1px solid white;
 }
 .Navbar a{
     padding: 25px;
@@ -28,14 +30,17 @@ html{
 }
 #close{
     position: absolute;
-    top: 25px;
+    top: 22px;
     right: 10px;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     cursor: pointer;
     background-color: black;
     color: white;
     transition: width 0.5s;
+}
+#close:hover{
+    color: red;
 }
 #open{
     border: none;
@@ -50,14 +55,18 @@ html{
     display: grid;  
     grid-template-columns: 1fr;
 }
+.Main h2{
+    margin: 5px auto;
+}
 .Container{
     position:fixed;
     top:0px;
     z-index: 1;
-    background-color: grey;
+    background-color: black;
     color: white;
     width: 100%;
     display: flex;
+    border: 1px solid white;
     justify-content: space-between;
 }
 .Brand #open{
@@ -68,6 +77,7 @@ html{
     top: 8px;
     left: 40px;
     font-size: xx-large;
+    cursor: pointer;
 }
 .Menu{
     margin:20px;
@@ -78,9 +88,12 @@ html{
     color: white;
     font-size: large;
 }
+.Menu a:hover{
+    color: red;
+}
 .BackgroundText{
     width: 100%;
-    background-color:darkslategrey;
+    background-color: black;
     height: 400px;
     display: flex;
     margin-top: 5px;
@@ -90,6 +103,7 @@ html{
 .BackgroundText h1{
     animation: ComeDown 5s 1;
     margin-top: 160px;
+    color:white;
 }
 .Owner{
     display: flex;
@@ -98,10 +112,10 @@ html{
     justify-content: space-around;
 }
 .Ceo img{
-    height: 500px;
+    height: 300px;
 }
 .Own img{
-    height: 500px;
+    height: 300px;
 }
 .Ceo p{
     padding-bottom: 20px;
@@ -110,13 +124,13 @@ html{
     padding-bottom: 20px;
 }
 #btn{
-    width: 200px;
-    height: 50px;
     justify-self: center;
-    border: none;
-    border-radius: 25px;
-    font-size: x-large;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: large;
     transition: font-size 0.5s;
+    background-color: black;
+    color: white;
 }
 #btn:hover{
     font-size: xx-large;
@@ -124,20 +138,47 @@ html{
 }
 .Learn-More{
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color:snow;
     display: none;
     margin-top: 20px;
     text-align: center;
+    transition: 0.5s ease   ;
+}
+.Products{
+    width: 100%;
+    height: 400px;
+}
+.Policy{
+    width: 100%;
+    text-align: center;
+    /* height: 200px; */
+    padding: 20px;
 }
 .Footer{
     width: 100%;
-    height: 200px;
-    background-color: bisque;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
-i{
-    display: inline;
-    margin-right: 10px;
+.Footer h4{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+}
+.ScrollUp{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+.Footer i{
+    font-size: xx-large;
+    color: white;
+    margin: 20px;
+
 }
 @media(max-width:500px){
     .Owner{
