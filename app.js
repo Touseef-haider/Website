@@ -19,6 +19,11 @@ images[3] = './Images/image4.jpg';
 images[4] = './Images/image5.jpg';
 images[5] = './Images/image6.jpg';
 let i = 0;
+
+window.onload = ()=>{
+    document.querySelector('.BackgroundText').scrollIntoView();
+}
+
 setInterval(() => {
     if ( i < images.length ) {
         document.querySelector('#image').src = images[i];
